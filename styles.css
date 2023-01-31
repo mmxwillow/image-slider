@@ -1,0 +1,51 @@
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+body {
+  background: #111;
+  display: grid;
+  place-items: center;
+  height:100vh;
+}
+* {
+  color: white;
+}
+button {
+  background: none;
+  border: none;
+}
+button:hover {
+  cursor: pointer;
+}
+.slider{
+    width:90vw;
+    height:90vh;
+    overflow:hidden;
+}
+.slides{
+    height:90vh;
+    display: flex;
+    transform:translateX(0vw);
+    transition: 2s;
+}
+.slides>img{
+    width:90vw;
+}
+.btn-container{
+    position: absolute;
+    display:grid;
+    grid-template-columns: min-content 1fr min-content;
+    width:90vw;
+    height:90vh;
+    padding-bottom: 1rem;
+}
+.radios{
+    justify-self: center;
+    align-self: end;
+}
+#back, #forward{
+    padding:1rem;
+}
+#back:hover, #forward:hover{
+    background-color: rgba(0,0,0,0.2);
+}
